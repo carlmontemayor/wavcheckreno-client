@@ -1,14 +1,10 @@
-import Head from 'next/head'
+import * as React from 'react';
+import { MenuNavLink } from 'components/MenuNavLInk';
 
 export const Home = (): JSX.Element => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+  <React.Fragment>
+    <MenuNavLink to="about" />
+  </React.Fragment>
+);
 
-    <div>hello</div>
-  </div>
-)
-
-export default Home
+export default Home;
